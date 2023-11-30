@@ -12,6 +12,7 @@ public class MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
+    // 싱글톤
     private static final MemberRepository instance = new MemberRepository();
 
     public static MemberRepository getInstance() {
